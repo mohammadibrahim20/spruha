@@ -1,12 +1,9 @@
 import { Listbox, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import { FiChevronDown, FiSearch } from "react-icons/Fi";
-import { BsThreeDotsVertical } from "react-icons/bs";
+import { FiChevronDown, FiSearch } from "react-icons/fi";
 import { HiMenuAlt1 } from "react-icons/hi";
-import { LuSettings } from "react-icons/lu";
 import LogoNew from "../../assets/images/logo.png";
 import RightNav from "./RightNav";
-
 const Navbar = () => {
   const people = [
     { name: "Choice One" },
@@ -105,12 +102,12 @@ const Navbar = () => {
           <RightNav />
         </div>
         <div className="flex items-center gap-5">
-          <BsThreeDotsVertical
+          {/* <BsThreeDotsVertical
             onClick={() => setOpenMenu(!openMenu)}
             className="md:hidden cursor-pointer"
             size={20}
-          />
-          <LuSettings className="animate-spin" size={20} />
+          /> */}
+          {/* <LuSettings className="animate-spin" size={20} /> */}
         </div>
       </div>
       {openMenu && (
