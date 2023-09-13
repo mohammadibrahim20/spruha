@@ -7,7 +7,7 @@ const Main = () => {
       <div className="px-5">
         <Navbar />
       </div>
-      <Outlet />
+      <div className="min-h-screen"><Outlet /></div>
     </div>
   );
 };

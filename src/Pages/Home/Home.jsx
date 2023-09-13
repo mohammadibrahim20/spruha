@@ -1,19 +1,30 @@
+import Footer from "../../Shared/Footer/Footer";
 import Welcome from "../../components/Welcome";
+import Recent from "./Aside/Recent";
 import Chart from "./Chart";
 import HomeBanner from "./HomeBanner";
+import LastTask from "./LastTask";
 import Stats from "./Stats";
+import Task from "./Task";
 
 const Home = () => {
   return (
-    <div className="bg-[#e8ebf6] p-5 h-screen ">
+    <div className="bg-[#e8ebf6] h-screen">
       <Welcome />
-      <div className="grid grid-cols-1 xl:grid-cols-5 gap-5">
-        <div className="cols-span-1  md:col-span-3 ">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-5 p-5 bg-[#e8ebf6] ">
+        <div className="cols-span-1  md:col-span-3  ">
           <HomeBanner />
           <Stats />
           <Chart />
+          <Task />
+          <LastTask />
+        </div>
+        <div className="col-span-1 sm:col-span-2 mt-5">
+          <Recent />
         </div>
       </div>
+      <Footer />
+
     </div>
   );
 };

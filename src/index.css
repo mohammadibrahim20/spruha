@@ -7,3 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #3712be !important;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}

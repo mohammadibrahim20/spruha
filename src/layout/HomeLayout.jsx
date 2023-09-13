@@ -3,9 +3,11 @@ import Main from "./Main";
 
 const HomeLayout = () => {
   return (
-    <div className="flex">
-      <Dashbord />
-      <Main />
+    <div className=" ">
+      <div className="flex">
+        <Dashbord />
+        <Main />
+      </div>
     </div>
   );
 };
