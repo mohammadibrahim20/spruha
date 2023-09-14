@@ -1,5 +1,7 @@
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import ProjectLogo from "../../../assets/images/project-logo.png"
+
 const WebsiteDesign = () => {
     const data = [
         {
@@ -92,7 +94,15 @@ const WebsiteDesign = () => {
                 </ResponsiveContainer>
             </div>
 
-
+            <div className='flex justify-between items-center'>
+                <div>
+                    <p className="text-xl text-gray-500 mt-2">Client : <span className='text-black'>Jhon Doe</span></p>
+                    <p className="text-base text-gray-500 mt-2">Deadline : 25 Dec 2022</p>
+                </div>
+                <div >
+                    <img className='h-16' src={ProjectLogo} alt="" />
+                </div>
+            </div>
         </div>
     )
 }

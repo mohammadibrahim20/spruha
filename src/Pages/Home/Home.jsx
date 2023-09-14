@@ -12,7 +12,7 @@ import Task from "./Task";
 
 const Home = () => {
   return (
-    <div className="bg-[#e8ebf6] h-screen">
+    <div className="bg-[#e8ebf6] h-screen mt-20">
       <Welcome />
       <div className="grid grid-cols-1 xl:grid-cols-5 gap-5 p-5 bg-[#e8ebf6] ">
         <div className="cols-span-1  md:col-span-3  ">
