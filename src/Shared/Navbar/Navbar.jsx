@@ -21,9 +21,9 @@ const Navbar = () => {
 
 
   return (
-    <div className=" bg-white">
+    <div className="bg-white">
       <div>
-        <div className="w-full flex items-center justify-between md:py-3 py-2 gap-5 border-b-2 drop-shadow-md">
+        <div className=" flex items-center justify-between py-3  gap-5 ">
           <HiMenuAlt1 size={24} />
           <div className="md:hidden">
             <img src={LogoNew} alt="" />

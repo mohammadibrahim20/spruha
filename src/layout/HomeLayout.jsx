@@ -5,7 +5,9 @@ const HomeLayout = () => {
   return (
     <div className="">
       <div className="flex">
-        {/* <Dashbord /> */}
+        <div className="hidden md:flex">
+          <Dashbord />
+        </div>
         <Main />
       </div>
     </div>

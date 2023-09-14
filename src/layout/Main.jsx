@@ -4,8 +4,8 @@ import Navbar from "../Shared/Navbar/Navbar";
 const Main = () => {
   return (
     <div className=" w-full">
-      <div className="pl-5 fixed w-full bg-white z-40">
-        <div><Navbar /></div>
+      <div className="fixed w-full md:w-5/6 bg-white border-b-2 drop-shadow-md z-40 px-5">
+       <Navbar />
       </div>
       <div className="min-h-screen"><Outlet /></div>
     </div>
