@@ -4,7 +4,7 @@ import { GoDownload } from "react-icons/go";
 
 const Welcome = () => {
   return (
-    <div className="flex justify-between items-center md:flex-row flex-col gap-5 px-5">
+    <div className="flex justify-between items-center md:flex-row flex-col gap-5 px-5 pt-5">
       <div className="text-sm breadcrumbs">
         <h2 className="text-2xl text-[#170c6b] font-semibold">
           Welcome to Dahsboard

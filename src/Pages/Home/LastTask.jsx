@@ -73,7 +73,6 @@ const LastTask = () => {
                   <label>
                     <input
                       type="checkbox"
-                      checked="checked"
                       className="checkbox checkbox-primary"
                     />
                   </label>
