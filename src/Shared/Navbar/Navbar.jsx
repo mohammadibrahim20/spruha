@@ -1,9 +1,11 @@
 import { Listbox, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { FiChevronDown, FiSearch } from "react-icons/fi";
+import { LuSettings, LuSettings2 } from "react-icons/lu";
 import { HiMenuAlt1 } from "react-icons/hi";
 import LogoNew from "../../assets/images/logo.png";
 import RightNav from "./RightNav";
+import { BsThreeDotsVertical } from "react-icons/bs";
 const Navbar = () => {
   const people = [
     { name: "Choice One" },
@@ -26,7 +28,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <img src={LogoNew} alt="" />
           </div>
-          <div className="hidden md:flex justify-center items-center py-2 ml-3 ">
+          <div className="hidden md:flex justify-start flex-1 items-center py-2 ml-3">
             <div className="border rounded-md flex">
               {/* <div className="fixed top-16 w-72"> */}
               <Listbox value="Choice One" onChange={setSelected}>
@@ -92,13 +94,13 @@ const Navbar = () => {
           <div className="hidden md:flex">
             <RightNav />
           </div>
-          <div className="flex items-center gap-5">
-            {/* <BsThreeDotsVertical
-            onClick={() => setOpenMenu(!openMenu)}
-            className="md:hidden cursor-pointer"
-            size={20}
-          /> */}
-            {/* <LuSettings className="animate-spin" size={20} /> */}
+          <div className="flex items-center gap-1">
+            <BsThreeDotsVertical
+              onClick={() => setOpenMenu(!openMenu)}
+              className="md:hidden cursor-pointer"
+              size={20}
+            />
+          <LuSettings className="animate-spin mr-5" size={20} />
           </div>
         </div>
         {openMenu && (
