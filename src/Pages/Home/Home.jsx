@@ -15,7 +15,7 @@ const Home = () => {
     <div className="bg-[#e8ebf6] h-screen md:mt-20 mt-16 ">
       <Welcome />
       <div className="grid grid-cols-1 xl:grid-cols-5 gap-5 p-5 bg-[#e8ebf6] ">
-        <div className="cols-span-1  md:col-span-3  ">
+        <div className="cols-span-1  md:col-span-3 ">
           <HomeBanner />
           <Stats />
           <Chart />

@@ -2,7 +2,7 @@ import Work from "../../assets/images/work3.png";
 
 const HomeBanner = () => {
   return (
-    <div className="rounded-md  flex flex-col md:flex-row justify-between items-center m- bg-[#6259ca] mt-5 md:relative">
+    <div className="rounded-md  flex flex-col md:flex-row justify-between items-center m- bg-[#6259ca] mt-5 md:relative ">
       <img className="md:absolute bottom-0 h-[160px]" src={Work} alt="" />
 
       <div className="bg-[#6259ca] w-full h-5/6 md:h-[135px] my-5 md:my-0 rounded-md">
