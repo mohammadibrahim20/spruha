@@ -24,7 +24,7 @@ const Navbar = ({ open, setOpen }) => {
 
   return (
     <div>
-      <div className="flex items-center justify-between gap-5 z-50 bg-white duration-300 transition-transform transform">
+      <div className="flex items-center justify-between gap-5 z-50 bg-white duration-300 transition-transform transform py-3 md:py-0">
         <div
           className={`hidden md:flex items-center justify-center border-b-2 h-[82px] bg-[#0e0e23] ${
             open ? "w-[241px]" : "w-20"
@@ -116,7 +116,7 @@ const Navbar = ({ open, setOpen }) => {
           <LuSettings className="animate-spin mr-5" size={20} />
         </div>
       </div>
-      {open && (
+      {openMenu && (
         <div className="border-b-2 md:hidden">
           <RightNav />
         </div>

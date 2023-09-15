@@ -5,7 +5,7 @@ import { RiMenuFoldLine } from "react-icons/ri";
 
 const RightNav = () => {
   return (
-    <div className="flex gap-5 md:gap-5 justify-end md:justify-center items-center py-2 ">
+    <div className="flex gap-8 md:gap-5 justify-center md:justify-center items-center py-5 md:py-2 bg-white">
       <MdOutlineDarkMode size={20} />
       <div className="avatar">
         <div className="w-8 rounded-full">

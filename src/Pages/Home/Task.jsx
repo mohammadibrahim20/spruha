@@ -37,38 +37,52 @@ const Task = () => {
         </div>
       </div>
 
-      <div className="flex bg-white rounded-md p-5 w-full">
+      <div className="flex bg-white rounded-md p-5 w-full ">
         <div>
           <h2 className="text-xl uppercase font-bold"> Top Inquiries</h2>
+          <div className="mt-5 space-y-3 ">
+            <div className="flex justify-between items-center">
+              Brand Identity
+              <div className="flex-1 flex justify-end items-center gap-1">
+                <progress
+                  className="progress progress-primary w-32 text-xs"
+                  value={35}
+                  max="50"
+                ></progress>
+                <span className="flex items-center">
+                  <BsArrowUpShort className="text-green-500" />
+                  24.03%
+                </span>
+              </div>
+            </div>
 
-          <div className="mt-5 space-y-3">
-            <span className="flex justify-between items-center gap-5">
-              Brang Identitity
-              <progress
-                className="progress progress-primary w-40"
-                value={35}
-                max="50"
-              ></progress>
-              <BsArrowUpShort className="text-green-500" />24.03%
-            </span>
-            <span className="flex justify-between items-center gap-3">
+            <div className="flex justify-between items-center">
               Product Design
-              <progress
-                className="progress progress-primary w-40"
-                value={35}
-                max="50"
-              ></progress>
-              <BsArrowDownShort className="text-red-500" /> 14.03%
-            </span>
-            <span className="flex justify-between items-center gap-5">
-              UI & UX Design
-              <progress
-                className="progress progress-primary w-40"
-                value={35}
-                max="50"
-              ></progress>
-              <BsArrowUpShort className="text-green-500" />25.03%
-            </span>
+              <div className="flex-1 flex justify-end items-center gap-1">
+                <progress
+                  className="progress progress-primary w-28 text-xs"
+                  value={35}
+                  max="50"
+                ></progress>
+                <span className="flex items-center">
+                  <BsArrowDownShort className="text-red-500" /> 14.03%
+                </span>
+              </div>
+            </div>
+            <div className="flex justify-between items-center gap-5 ">
+              Ui & UX Design
+              <div className="flex-1 flex justify-end items-center gap-1">
+                <progress
+                  className="progress progress-primary w-28 text-xs"
+                  value={35}
+                  max="50"
+                ></progress>
+                <span className="flex items-center">
+                  <BsArrowUpShort className="text-green-500" />
+                  24.03%
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
